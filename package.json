@@ -20,9 +20,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm ls --depth=Infinity > /dev/null",
-    "test": "npm run test-node && npm run test-webkit",
-    "test-node": "mocha test/test.js",
-    "test-webkit": "mocha-phantomjs test/index.html"
+    "test": "npm run test-node",
+    "test-node": "mocha test/test.js"
   },
   "author": "MDN (https://developer.mozilla.org/en-US/docs/JXON)",
   "contributors": [
@@ -44,7 +43,6 @@
   },
   "license": "GPL v3",
   "dependencies": {
-    "mocha-phantomjs": "^4.0.2",
     "xmldom": "0.1.19"
   },
   "devDependencies": {
